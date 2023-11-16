@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coursesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_backside_background">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:background="@drawable/search_backside_background">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutheader"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/search_backside_background"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/courses_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Courses"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/about_courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Paid Courses &amp; Un-paid courses"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toStartOf="@+id/courses_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/courses_text"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:orientation="vertical"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Courses"
+              android:textStyle="bold"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="20dp"
+              android:fontFamily="@font/aclonica"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="@string/courses"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="17dp"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Resources:"
+              android:textStyle="bold"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:fontFamily="@font/aclonica"
+              android:textSize="20dp" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Websites,Youtube links,Apps"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="17dp"/>
+
+          <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textStyle="bold"
+              android:text="Websites:"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="19dp"/>
+
+          <TextView
+              android:id="@+id/geeksforgeeks"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/geeksforgeeks"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/tpoint"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/tpoint"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/javatpoint"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/javatpoint"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/edx"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/edx"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/aicte"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/aicte"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/oclassrooms"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/oclassrooms"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/glassdoorcourse"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/glassdoorcourse"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textStyle="bold"
+              android:text="Youtube links:"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="19dp"/>
+
+          <TextView
+              android:id="@+id/codewithharry"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link1"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/nesoacademy"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link2"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/telusuko"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link3"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/cleverProgrammer"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link4"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/programmingwithmosh"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link5"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/jlectures"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link6"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:id="@+id/jbrains"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/link7"
+              android:layout_marginStart="70dp"
+              android:textColor="#1520A6"
+              android:textSize="17dp" />
+
+          <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textStyle="bold"
+              android:text="Applications:"
+              android:textAlignment="viewStart"
+              android:textColor="@color/blue"
+              android:textSize="19dp"/>
+
+          <ListView
+              android:id="@+id/appli_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </ListView>
+
+          <TextView
+              android:id="@+id/app"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/app"
+              android:layout_marginStart="70dp"
+              android:textColor="@color/blue"
+              android:textSize="17dp" />
+
+
+
+
+
+      </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

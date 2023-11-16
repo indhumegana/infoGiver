@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jobsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/search_backside_background"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/job_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/about_jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Let's get a job"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/job_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_text"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutheader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jobs"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/aclonica"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="We will provide some resources where you can find the jobs"
+            android:textAlignment="viewStart"
+            android:textColor="@color/blue"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resources:"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:fontFamily="@font/aclonica"/>
+
+        <TextView
+            android:id="@+id/lk1"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linkedin"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/gg2"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/google"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mc3"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/microsoft"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ub4"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uber"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/in5"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indeed"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nk6"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/naukri"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tg7"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tata"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tm8"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tmahindra"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/flm9"
+            android:layout_marginStart="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flm"
+            android:textColor="#1520A6"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
